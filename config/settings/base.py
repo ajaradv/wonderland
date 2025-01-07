@@ -83,6 +83,7 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "drf_spectacular",
     "webpack_loader",
+    "fontawesomefree",
 ]
 
 LOCAL_APPS = [
@@ -353,3 +354,5 @@ WEBPACK_LOADER = {
 }
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+ASGI_APPLICATION = "wonderland.asgi.application"

@@ -216,4 +216,7 @@ dependencies = [
   "django-htmx>=1.21.0",
   "django-tailwind[reload]>=3.8.0",
   "crispy-tailwind>=1.0.3",
+  "fontawesomefree>=6.6.0",
+  "channels>=4.2.0",
+  "channels-redis>=4.2.1",
 ]

@@ -28,7 +28,6 @@ COPY . ${APP_HOME}
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync
 
-
 # devcontainer dependencies and utils
 RUN apt-get update && apt-get install --no-install-recommends -y \
   sudo git bash-completion nano ssh
