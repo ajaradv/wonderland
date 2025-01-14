@@ -8,6 +8,14 @@ module.exports = {
   entry: {
     project: path.resolve(__dirname, "../wonderland/static/js/project"),
     vendors: path.resolve(__dirname, "../wonderland/static/js/vendors"),
+    project_bootstrap: path.resolve(
+      __dirname,
+      "../wonderland/static/js/project_bootstrap",
+    ),
+    vendors_bootstrap: path.resolve(
+      __dirname,
+      "../wonderland/static/js/vendors_bootstrap",
+    ),
   },
   output: {
     path: path.resolve(__dirname, "../wonderland/static/webpack_bundles/"),
