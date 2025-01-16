@@ -1,4 +1,7 @@
-var selectedTheme = localStorage.getItem("theme");
-if (selectedTheme) {
-  document.documentElement.setAttribute("data-theme", selectedTheme);
-}
+import "htmx.org";
+import Alpine from "alpinejs";
+
+window.Alpine = Alpine;
+window.htmx = require("htmx.org");
+
+Alpine.start();

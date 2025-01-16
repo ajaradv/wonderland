@@ -417,6 +417,15 @@ wheels = [
 ]
 
 [[package]]
+name = "diff-match-patch"
+version = "20241021"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0e/ad/32e1777dd57d8e85fa31e3a243af66c538245b8d64b7265bec9a61f2ca33/diff_match_patch-20241021.tar.gz", hash = "sha256:beae57a99fa48084532935ee2968b8661db861862ec82c6f21f4acdd6d835073", size = 39962 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/bb/2aa9b46a01197398b901e458974c20ed107935c26e44e37ad5b0e5511e44/diff_match_patch-20241021-py3-none-any.whl", hash = "sha256:93cea333fb8b2bc0d181b0de5e16df50dd344ce64828226bda07728818936782", size = 43252 },
+]
+
+[[package]]
 name = "distlib"
 version = "0.3.9"
 source = { registry = "https://pypi.org/simple" }
@@ -452,6 +461,19 @@ sdist = { url = "https://files.pythonhosted.org/packages/b3/98/9013e6859a3fb2716
 mfa = [
     { name = "fido2" },
     { name = "qrcode" },
+]
+
+[[package]]
+name = "django-allauth-ui"
+version = "1.5.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django-widget-tweaks" },
+    { name = "slippers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6e/97/9c31005d933e64794ee6bab0cf019e397ee970446818c076312d3ff24cef/django_allauth_ui-1.5.3.tar.gz", hash = "sha256:adb5c142232bc1fc097158e0367eccc3785afd20c97e5d257cc3e04f3ca90fda", size = 39242 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6b/e2/e7e32809971c3acedf990069d4bf539ed4be57c5bad63ce2fb3a112a9ce6/django_allauth_ui-1.5.3-py3-none-any.whl", hash = "sha256:ac880ce6003b7953fbfc0b04b5e64607b94bd2d778c16cf108fcdb67278955c5", size = 56610 },
 ]
 
 [[package]]
@@ -509,6 +531,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d3/34/f0c7a7241f885cbfc99b1edef0acc7915dd7a3fb749fe27de5e8a9fb2ccb/django_cors_headers-4.4.0.tar.gz", hash = "sha256:92cf4633e22af67a230a1456cb1b7a02bb213d6536d2dcb2a4a24092ea9cebc2", size = 21151 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9d/0c/4201d5650199b3a36ef3f2ab91f44c4527a70685f3003ce9f3ed8c30780c/django_cors_headers-4.4.0-py3-none-any.whl", hash = "sha256:5c6e3b7fe870876a1efdfeb4f433782c3524078fa0dc9e0195f6706ce7a242f6", size = 12789 },
+]
+
+[[package]]
+name = "django-cotton"
+version = "1.5.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9f/ef/c35798e1d402e012f93ac621cc33cb77064f5ef2dd4e1e482a8ec507ad5a/django_cotton-1.5.2.tar.gz", hash = "sha256:d4856bf8fbcca6680f84a44e9e72860d2ba4e5b3759f9a6ab5a865b21f350f7c", size = 21153 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/be/2c/952a12e8db2d41b0bb04239b720897cad60519166bf69079069e9a678642/django_cotton-1.5.2-py3-none-any.whl", hash = "sha256:118fdf905152b1118f0ca07eec82a134a99a3770d0dd0b907956d0dcfcecd933", size = 20797 },
 ]
 
 [[package]]
@@ -583,6 +617,20 @@ wheels = [
 ]
 
 [[package]]
+name = "django-import-export"
+version = "4.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "diff-match-patch" },
+    { name = "django" },
+    { name = "tablib" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3c/2d/9e90960e96923b8bc924e79769599f1b5a043f7268196d3e873352e3b999/django_import_export-4.3.3.tar.gz", hash = "sha256:b261f44aedf572a69f975655afba15bff1e354eddd91d9c1bbd32d3cee44168d", size = 2219789 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/10/86bc2a9d281ac6d6c88df2fce38a28daaa9df466e06bf87953e79590e21c/django_import_export-4.3.3-py3-none-any.whl", hash = "sha256:91b47c9a2701a5b039667df5c46ee682a41bb224ac215a0e66b177a459e35983", size = 143058 },
+]
+
+[[package]]
 name = "django-model-utils"
 version = "5.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -605,6 +653,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/83/9d/2272742fdd9d0a9f0b28cd995b0539430c9467a2192e4de2cea9ea6ad38c/django-redis-5.4.0.tar.gz", hash = "sha256:6a02abaa34b0fea8bf9b707d2c363ab6adc7409950b2db93602e6cb292818c42", size = 52567 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/f1/63caad7c9222c26a62082f4f777de26389233b7574629996098bf6d25a4d/django_redis-5.4.0-py3-none-any.whl", hash = "sha256:ebc88df7da810732e2af9987f7f426c96204bf89319df4c6da6ca9a2942edd5b", size = 31119 },
+]
+
+[[package]]
+name = "django-simple-history"
+version = "3.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/91/bf/a13fdb19834b9a7fc2c6b1b192891e4eac90c1281fb65904a34ad80c0e4f/django_simple_history-3.7.0.tar.gz", hash = "sha256:ac3b7ca8b0d33f7ea6be8fe7fc98cf43415efa500ff5dfe736fbd1ebc0cf39f9", size = 230317 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9c/61/d9ec3f38161b4d9ec6a6ed16e882a402d6e4a3b20de2902e4fb6671ed630/django_simple_history-3.7.0-py3-none-any.whl", hash = "sha256:282cb2c4aa63f51547f17da7f2130abaa81ba01694676d19b88d52c94a57a52c", size = 139406 },
 ]
 
 [[package]]
@@ -676,6 +736,18 @@ reload = [
 ]
 
 [[package]]
+name = "django-template-partials"
+version = "24.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1c/ff/2a7ddae12ca8e5fea1a41af05924c04f1bb4aec7157b04a88b829dd93d4a/django_template_partials-24.4.tar.gz", hash = "sha256:25b67301470fc274ecc419e5e5fd4686a5020b1c038fd241a70eb087809034b6", size = 14538 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/31/72/d8eea70683b25230e0d2647b5cf6f2db4a7e7d35cb6170506d9618196374/django_template_partials-24.4-py2.py3-none-any.whl", hash = "sha256:ee59d3839385d7f648907c3fa8d5923fcd66cd8090f141fe2a1c338b917984e2", size = 8439 },
+]
+
+[[package]]
 name = "django-timezone-field"
 version = "7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -688,12 +760,33 @@ wheels = [
 ]
 
 [[package]]
+name = "django-unfold"
+version = "0.44.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/78/5f78083f7f6d447c88205fa448e53582d502621866e398bb4f54b94dde50/django_unfold-0.44.0.tar.gz", hash = "sha256:1a448c2ab993ab39811b5dede01f5b36066a2c7618b9db64c5f4b29aaa166b9c", size = 751418 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/44/2e78dd1c376b76bab58b9790eea3ec3b4ba7556d0c1acab9ccdadf9b1222/django_unfold-0.44.0-py3-none-any.whl", hash = "sha256:94da205caad9d5ba0d1a0542c2bacaadbf23d90bf176472214e53cecfc2e9469", size = 823946 },
+]
+
+[[package]]
 name = "django-webpack-loader"
 version = "3.1.1"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/19/d9/17f799d3fb6af2db945a32aa6a70571dd989458954ec647d279cd3cb21af/django-webpack-loader-3.1.1.tar.gz", hash = "sha256:f11b79700d1bfc1299131bdf4ba479c1ec200f83a1400e1a2feb5c2ba7b6f8c4", size = 18371 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/01/121be0ea43ff35e19a6f66c0d23a2b06b68189e454eb92042dd99f54b378/django_webpack_loader-3.1.1-py2.py3-none-any.whl", hash = "sha256:15c05cb685b113c5e6f947efa8ee3888a03c2969a2dd0da4c7610b3e695f67ba", size = 19004 },
+]
+
+[[package]]
+name = "django-widget-tweaks"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/fe/26eb92fba83844e71bbec0ced7fc2e843e5990020e3cc676925204031654/django-widget-tweaks-1.5.0.tar.gz", hash = "sha256:1c2180681ebb994e922c754804c7ffebbe1245014777ac47897a81f57cc629c7", size = 14767 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/46/6a/6cb6deb5c38b785c77c3ba66f53051eada49205979c407323eb666930915/django_widget_tweaks-1.5.0-py3-none-any.whl", hash = "sha256:a41b7b2f05bd44d673d11ebd6c09a96f1d013ee98121cb98c384fe84e33b881e", size = 8960 },
 ]
 
 [[package]]
@@ -1640,6 +1733,21 @@ wheels = [
 ]
 
 [[package]]
+name = "slippers"
+version = "0.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "pyyaml" },
+    { name = "typeguard" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a7/c6/6af4500f31e53e9f782d264cb715f1a8cc9ac4248fba9fe2fe172822ea79/slippers-0.6.2.tar.gz", hash = "sha256:4cb555b8822ba0d404e5405723f5d723994022c29046008ee917081031bc0cf1", size = 59499 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/8c/1fe2803870861f9a7f0cf502e4d1361dbb3685997118f4f76fd83ec9272f/slippers-0.6.2-py3-none-any.whl", hash = "sha256:739e05f85354becbf0a65daab831eea62557d89e7512042209ab629af4378bca", size = 61359 },
+]
+
+[[package]]
 name = "sniffio"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1791,6 +1899,15 @@ wheels = [
 ]
 
 [[package]]
+name = "tablib"
+version = "3.7.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/78/afdf974431f58f0270113e8c50bb020f4d3927eaf0a47806c55e91da3e70/tablib-3.7.0.tar.gz", hash = "sha256:f9db84ed398df5109bd69c11d46613d16cc572fb9ad3213f10d95e2b5f12c18e", size = 121221 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5a/dd/d578310f8ae1cd8e0c6f16a2ff281b8f9993f6cdba1b3d48f92bfae536b6/tablib-3.7.0-py3-none-any.whl", hash = "sha256:9a6930037cfe0f782377963ca3f2b1dae3fd4cdbf0883848f22f1447e7bb718b", size = 47534 },
+]
+
+[[package]]
 name = "termcolor"
 version = "2.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1845,6 +1962,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/eb/79/72064e6a701c2183016abbbfedaba506d81e30e232a68c9f0d6f6fcd1574/traitlets-5.14.3.tar.gz", hash = "sha256:9ed0579d3502c94b4b3732ac120375cda96f923114522847de4b3bb98b96b6b7", size = 161621 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/00/c0/8f5d070730d7836adc9c9b6408dec68c6ced86b304a9b26a14df072a6e8c/traitlets-5.14.3-py3-none-any.whl", hash = "sha256:b74e89e397b1ed28cc831db7aea759ba6640cb3de13090ca145426688ff1ac4f", size = 85359 },
+]
+
+[[package]]
+name = "typeguard"
+version = "2.13.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3a/38/c61bfcf62a7b572b5e9363a802ff92559cb427ee963048e1442e3aef7490/typeguard-2.13.3.tar.gz", hash = "sha256:00edaa8da3a133674796cf5ea87d9f4b4c367d77476e185e80251cc13dfbb8c4", size = 40604 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9a/bb/d43e5c75054e53efce310e79d63df0ac3f25e34c926be5dffb7d283fb2a8/typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1", size = 17605 },
 ]
 
 [[package]]
@@ -2091,17 +2217,24 @@ dependencies = [
     { name = "crispy-tailwind" },
     { name = "django" },
     { name = "django-allauth", extra = ["mfa"] },
+    { name = "django-allauth-ui" },
     { name = "django-anymail" },
     { name = "django-celery-beat" },
     { name = "django-cors-headers" },
+    { name = "django-cotton" },
     { name = "django-crispy-forms" },
     { name = "django-environ" },
     { name = "django-htmx" },
+    { name = "django-import-export" },
     { name = "django-model-utils" },
     { name = "django-redis" },
+    { name = "django-simple-history" },
     { name = "django-storages", extra = ["s3"] },
     { name = "django-tailwind", extra = ["reload"] },
+    { name = "django-template-partials" },
+    { name = "django-unfold" },
     { name = "django-webpack-loader" },
+    { name = "django-widget-tweaks" },
     { name = "djangorestframework" },
     { name = "drf-spectacular" },
     { name = "flower" },
@@ -2113,6 +2246,7 @@ dependencies = [
     { name = "python-slugify" },
     { name = "redis" },
     { name = "sentry-sdk" },
+    { name = "slippers" },
     { name = "uvicorn", extra = ["standard"] },
     { name = "uvicorn-worker" },
     { name = "whitenoise" },
@@ -2152,17 +2286,24 @@ requires-dist = [
     { name = "crispy-tailwind", specifier = ">=1.0.3" },
     { name = "django", specifier = "==5.0.9" },
     { name = "django-allauth", extras = ["mfa"], specifier = "==65.0.2" },
+    { name = "django-allauth-ui", specifier = ">=1.5.3" },
     { name = "django-anymail", extras = ["mailjet"], specifier = "==12.0" },
     { name = "django-celery-beat", specifier = "==2.7.0" },
     { name = "django-cors-headers", specifier = "==4.4.0" },
+    { name = "django-cotton", specifier = ">=1.5.2" },
     { name = "django-crispy-forms", specifier = "==2.3" },
     { name = "django-environ", specifier = "==0.11.2" },
     { name = "django-htmx", specifier = ">=1.21.0" },
+    { name = "django-import-export", specifier = ">=4.3.3" },
     { name = "django-model-utils", specifier = "==5.0.0" },
     { name = "django-redis", specifier = "==5.4.0" },
+    { name = "django-simple-history", specifier = ">=3.7.0" },
     { name = "django-storages", extras = ["s3"], specifier = "==1.14.4" },
     { name = "django-tailwind", extras = ["reload"], specifier = ">=3.8.0" },
+    { name = "django-template-partials", specifier = ">=24.4" },
+    { name = "django-unfold", specifier = ">=0.44.0" },
     { name = "django-webpack-loader", specifier = "==3.1.1" },
+    { name = "django-widget-tweaks", specifier = ">=1.5.0" },
     { name = "djangorestframework", specifier = "==3.15.2" },
     { name = "drf-spectacular", specifier = "==0.27.2" },
     { name = "flower", specifier = "==2.0.1" },
@@ -2174,6 +2315,7 @@ requires-dist = [
     { name = "python-slugify", specifier = "==8.0.4" },
     { name = "redis", specifier = "==5.1.1" },
     { name = "sentry-sdk", specifier = "==2.19.2" },
+    { name = "slippers", specifier = ">=0.6.2" },
     { name = "uvicorn", extras = ["standard"], specifier = "==0.34.0" },
     { name = "uvicorn-worker", specifier = "==0.2.0" },
     { name = "whitenoise", specifier = "==6.7.0" },
