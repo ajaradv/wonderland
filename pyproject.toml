@@ -213,4 +213,18 @@ dependencies = [
   # ------------------------------------------------------------------------------
   "django-storages[s3]==1.14.4", # https://github.com/jschneier/django-storages
   "django-anymail[mailjet]==12.0", # https://github.com/anymail/django-anymail
+  "django-htmx>=1.21.0",
+  "django-tailwind[reload]>=3.8.0",
+  "crispy-tailwind>=1.0.3",
+  "fontawesomefree>=6.6.0",
+  "channels>=4.2.0",
+  "channels-redis>=4.2.1",
+  "django-template-partials>=24.4",
+  "django-cotton>=1.5.2",
+  "django-unfold>=0.44.0",
+  "django-import-export>=4.3.3",
+  "django-simple-history>=3.7.0",
+  "django-allauth-ui>=1.5.3",
+  "django-widget-tweaks>=1.5.0",
+  "slippers>=0.6.2",
 ]

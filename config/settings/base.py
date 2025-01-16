@@ -60,6 +60,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 # APPS
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
+    "unfold",
+    "unfold.contrib.import_export",
+    "unfold.contrib.simple_history",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -73,6 +76,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
+    "allauth_ui",
     "allauth",
     "allauth.account",
     "allauth.mfa",
@@ -83,9 +87,18 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "drf_spectacular",
     "webpack_loader",
+    "fontawesomefree",
+    "django_htmx",
+    "template_partials",
+    "django_cotton",
+    "simple_history",
+    "import_export",
+    "widget_tweaks",
+    "slippers",
 ]
 
 LOCAL_APPS = [
+    "wonderland.general",
     "wonderland.users",
     # Your stuff: custom apps go here
 ]
@@ -142,6 +155,7 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -353,3 +367,10 @@ WEBPACK_LOADER = {
 }
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+ASGI_APPLICATION = "wonderland.asgi.application"
+
+
+UNFOLD = {
+    "SITE_HEADER": "Alice Administration",
+}

@@ -6,16 +6,16 @@
   {{ user.username }}
 {% endblock title %}
 {% block content %}
-  <h1>{{ user.username }}</h1>
-  <form class="form-horizontal"
-        method="post"
-        action="{% url 'users:update' %}">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <div class="control-group">
-      <div class="controls">
+  <div class="space-y-12">
+    <div class="border-b border-gray-900/10 pb-12">
+      <h1 class="w-full flex-none mb-3 text-2xl leading-none text-slate-900">{{ user.username | upper }}</h1>
+      <br />
+      <form method="post" action="{% url 'users:update' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br />
         <button type="submit" class="btn btn-primary">Update</button>
-      </div>
+      </form>
     </div>
-  </form>
+  </div>
 {% endblock content %}
