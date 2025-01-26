@@ -75,6 +75,7 @@ DJANGO_APPS = [
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
+    "crispy_tailwind",
     "crispy_bootstrap5",
     "allauth_ui",
     "allauth",
@@ -101,6 +102,8 @@ LOCAL_APPS = [
     "wonderland.general",
     "wonderland.users",
     # Your stuff: custom apps go here
+    "wonderland.todo",
+    "wonderland.chat",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -207,6 +210,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "wonderland.users.context_processors.allauth_settings",
             ],
+            "builtins": ["template_partials.templatetags.partials"],
         },
     },
 ]
@@ -215,8 +219,8 @@ TEMPLATES = [
 FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
 # http://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
-CRISPY_TEMPLATE_PACK = "bootstrap5"
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "tailwind"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
 
 # FIXTURES
 # ------------------------------------------------------------------------------
@@ -373,4 +377,13 @@ ASGI_APPLICATION = "wonderland.asgi.application"
 
 UNFOLD = {
     "SITE_HEADER": "Alice Administration",
+}
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("redis", "6379")],
+        },
+    },
 }

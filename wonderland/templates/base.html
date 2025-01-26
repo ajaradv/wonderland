@@ -40,7 +40,8 @@
       {% render_bundle 'project' 'js' attrs='defer' %}
     {% endblock javascript %}
   </head>
-  <body class="{% block bodyclass %}{% endblock bodyclass %}">
+  <body class="{% block bodyclass %}{% endblock bodyclass %}"
+        hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
     {% block body %}
       <div class="navbar bg-base-100">
         <div class="flex-none lg:hidden">

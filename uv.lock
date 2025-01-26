@@ -450,12 +450,13 @@ wheels = [
 
 [[package]]
 name = "django-allauth"
-version = "65.0.2"
+version = "65.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "asgiref" },
     { name = "django" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/98/9013e6859a3fb2716c6e6091583e906e8a48262c4ee9a2a4d2a01f7cfefc/django_allauth-65.0.2.tar.gz", hash = "sha256:6b5b3a7a65b1c28078b6eb0dd234310b58a44e8addfd187dc30437b0b2bc41a5", size = 1278378 }
+sdist = { url = "https://files.pythonhosted.org/packages/20/73/3a24b32df7046c5106846c0cfb3309033e2ebe00b08dfbf64c883add253a/django_allauth-65.3.1.tar.gz", hash = "sha256:e02e951b71a2753a746459f2efa114c7c72bf2cef6887dbe8607a577c0350587", size = 1547530 }
 
 [package.optional-dependencies]
 mfa = [
@@ -522,15 +523,15 @@ wheels = [
 
 [[package]]
 name = "django-cors-headers"
-version = "4.4.0"
+version = "4.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
     { name = "django" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d3/34/f0c7a7241f885cbfc99b1edef0acc7915dd7a3fb749fe27de5e8a9fb2ccb/django_cors_headers-4.4.0.tar.gz", hash = "sha256:92cf4633e22af67a230a1456cb1b7a02bb213d6536d2dcb2a4a24092ea9cebc2", size = 21151 }
+sdist = { url = "https://files.pythonhosted.org/packages/c6/e5/3b67fc05b9c02b926411436dfc553829bc00843706ce7f99752433017f47/django_cors_headers-4.6.0.tar.gz", hash = "sha256:14d76b4b4c8d39375baeddd89e4f08899051eeaf177cb02a29bd6eae8cf63aa8", size = 20961 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9d/0c/4201d5650199b3a36ef3f2ab91f44c4527a70685f3003ce9f3ed8c30780c/django_cors_headers-4.4.0-py3-none-any.whl", hash = "sha256:5c6e3b7fe870876a1efdfeb4f433782c3524078fa0dc9e0195f6706ce7a242f6", size = 12789 },
+    { url = "https://files.pythonhosted.org/packages/52/73/689532cf164ab10ed1521d825ea156656520cec98886c8d2ac1ce8829220/django_cors_headers-4.6.0-py3-none-any.whl", hash = "sha256:8edbc0497e611c24d5150e0055d3b178c6534b8ed826fb6f53b21c63f5d48ba3", size = 12791 },
 ]
 
 [[package]]
@@ -850,7 +851,7 @@ wheels = [
 
 [[package]]
 name = "drf-spectacular"
-version = "0.27.2"
+version = "0.28.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
@@ -860,9 +861,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "uritemplate" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b1/c9/55311dcbdae9a437eeb8f898f8421a6a3eabf08725c23ddf458cf2479b78/drf-spectacular-0.27.2.tar.gz", hash = "sha256:a199492f2163c4101055075ebdbb037d59c6e0030692fc83a1a8c0fc65929981", size = 235131 }
+sdist = { url = "https://files.pythonhosted.org/packages/da/b9/741056455aed00fa51a1df41fad5ad27c8e0d433b6bf490d4e60e2808bc6/drf_spectacular-0.28.0.tar.gz", hash = "sha256:2c778a47a40ab2f5078a7c42e82baba07397bb35b074ae4680721b2805943061", size = 237849 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b2/cd/84c44a5d435f6544e58a9b138305f59bca232157ae4ecb658f9787f87d1c/drf_spectacular-0.27.2-py3-none-any.whl", hash = "sha256:b1c04bf8b2fbbeaf6f59414b4ea448c8787aba4d32f76055c3b13335cf7ec37b", size = 102930 },
+    { url = "https://files.pythonhosted.org/packages/fb/66/c2929871393b1515c3767a670ff7d980a6882964a31a4ca2680b30d7212a/drf_spectacular-0.28.0-py3-none-any.whl", hash = "sha256:856e7edf1056e49a4245e87a61e8da4baff46c83dbc25be1da2df77f354c7cb4", size = 103928 },
 ]
 
 [[package]]
@@ -2197,11 +2198,11 @@ watchdog = [
 
 [[package]]
 name = "whitenoise"
-version = "6.7.0"
+version = "6.8.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/64/b8/86451d63ef5e1a9c480b52759d9db25ba85c3420ebdaf039057ed152a4c1/whitenoise-6.7.0.tar.gz", hash = "sha256:58c7a6cd811e275a6c91af22e96e87da0b1109e9a53bb7464116ef4c963bf636", size = 24973 }
+sdist = { url = "https://files.pythonhosted.org/packages/68/49/c21ebb5b911888c349a849ec7d1ead2dffbbcc4e2be0f6af2a7dbac03393/whitenoise-6.8.2.tar.gz", hash = "sha256:486bd7267a375fa9650b136daaec156ac572971acc8bf99add90817a530dd1d4", size = 25892 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b8/42/68400d8ad59f67a1f7e12c2f39089ce005f08f73333f3e215f3d5ed6453c/whitenoise-6.7.0-py3-none-any.whl", hash = "sha256:a1ae85e01fdc9815d12fa33f17765bc132ed2c54fa76daf9e39e879dd93566f6", size = 19905 },
+    { url = "https://files.pythonhosted.org/packages/8c/3a/8d22513e1942899270dcdbd47f9886309836442cd7ede4b0d00be79715f5/whitenoise-6.8.2-py3-none-any.whl", hash = "sha256:df12dce147a043d1956d81d288c6f0044147c6d2ab9726e5772ac50fb45d2280", size = 20158 },
 ]
 
 [[package]]
@@ -2285,11 +2286,11 @@ requires-dist = [
     { name = "crispy-bootstrap5", specifier = "==2024.10" },
     { name = "crispy-tailwind", specifier = ">=1.0.3" },
     { name = "django", specifier = "==5.0.9" },
-    { name = "django-allauth", extras = ["mfa"], specifier = "==65.0.2" },
+    { name = "django-allauth", extras = ["mfa"], specifier = "==65.3.1" },
     { name = "django-allauth-ui", specifier = ">=1.5.3" },
     { name = "django-anymail", extras = ["mailjet"], specifier = "==12.0" },
     { name = "django-celery-beat", specifier = "==2.7.0" },
-    { name = "django-cors-headers", specifier = "==4.4.0" },
+    { name = "django-cors-headers", specifier = "==4.6.0" },
     { name = "django-cotton", specifier = ">=1.5.2" },
     { name = "django-crispy-forms", specifier = "==2.3" },
     { name = "django-environ", specifier = "==0.11.2" },
@@ -2305,7 +2306,7 @@ requires-dist = [
     { name = "django-webpack-loader", specifier = "==3.1.1" },
     { name = "django-widget-tweaks", specifier = ">=1.5.0" },
     { name = "djangorestframework", specifier = "==3.15.2" },
-    { name = "drf-spectacular", specifier = "==0.27.2" },
+    { name = "drf-spectacular", specifier = "==0.28.0" },
     { name = "flower", specifier = "==2.0.1" },
     { name = "fontawesomefree", specifier = ">=6.6.0" },
     { name = "gunicorn", specifier = "==23.0.0" },
@@ -2318,7 +2319,7 @@ requires-dist = [
     { name = "slippers", specifier = ">=0.6.2" },
     { name = "uvicorn", extras = ["standard"], specifier = "==0.34.0" },
     { name = "uvicorn-worker", specifier = "==0.2.0" },
-    { name = "whitenoise", specifier = "==6.7.0" },
+    { name = "whitenoise", specifier = "==6.8.2" },
 ]
 
 [package.metadata.requires-dev]

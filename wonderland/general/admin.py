@@ -1,3 +1,5 @@
+"""Admin configuration for unfold integration"""
+
 from allauth.account.admin import EmailAddressAdmin as BaseEmailAddressAdmin
 from allauth.account.models import EmailAddress
 from allauth.mfa.admin import AuthenticatorAdmin as BaseAuthenticatorAdmin
