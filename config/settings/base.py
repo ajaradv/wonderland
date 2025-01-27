@@ -101,7 +101,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "wonderland.general",
     "wonderland.users",
-    # Your stuff: custom apps go here
+    # Project apps
     "wonderland.todo",
     "wonderland.chat",
 ]
