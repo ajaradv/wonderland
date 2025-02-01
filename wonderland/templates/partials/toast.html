@@ -1,0 +1,13 @@
+{% if messages %}
+  {% for message in messages %}
+    <div x-data="{dismissed: false}"
+         x-show="!dismissed"
+         x-init="setTimeout(() => dismissed=true, 2000)">
+      <div class="toast toast-top toast-end mt-10" @click="dismissed=true">
+        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} block">
+          <span>{{ message }}</span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}

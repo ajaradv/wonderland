@@ -1,6 +1,7 @@
 const path = require("path");
 const BundleTracker = require("webpack-bundle-tracker");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   target: "web",
@@ -29,6 +30,7 @@ module.exports = {
       filename: "webpack-stats.json",
     }),
     new MiniCssExtractPlugin({ filename: "css/[name].[contenthash].css" }),
+    new webpack.ProvidePlugin({ htmx: "htmx.org" }),
   ],
   module: {
     rules: [

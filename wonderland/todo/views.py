@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -24,6 +25,7 @@ def submit_todo(request):
         todo.user = request.user
         todo.save()
 
+        messages.success(request, "Todo added!")
         # return HTMX partial
         context = {"todo": todo}
         return render(request, "todo/partials/todo_item.html", context)
@@ -36,6 +38,7 @@ def complete_todo(request, pk):
     todo = get_object_or_404(Todo, pk=pk, user=request.user)
     todo.is_completed = True
     todo.save()
+    messages.info(request, "Todo completed!")
     context = {"todo": todo}
     return render(request, "todo/partials/todo_item.html", context)
 

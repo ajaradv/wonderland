@@ -10,6 +10,10 @@
               hx-swap="outerHTML">Mark Completed</button>
     {% endif %}
     <button class="btn btn-error btn-xs"
-            hx-delete="{% url 'todo:delete-todo' todo.pk %}">Delete</button>
+            hx-delete="{% url 'todo:delete-todo' todo.pk %}"
+            hx-on:delete-todo="this.closest('tr').remove()">Delete</button>
   </td>
 </tr>
+<section id="messages" hx-swap-oob="true" hx-swap="innerHTML">
+  {% include 'partials/toast.html' %}
+</section>

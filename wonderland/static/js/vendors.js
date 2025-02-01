@@ -1,7 +1,7 @@
 import "htmx.org";
 import Alpine from "alpinejs";
 
+window.htmx = htmx.default;
 window.Alpine = Alpine;
-window.htmx = require("htmx.org");
 
 Alpine.start();
