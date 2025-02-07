@@ -27,7 +27,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 
 # Python 'run' stage
-FROM docker.io/python:3.12.8-slim-bookworm AS python-run-stage
+FROM docker.io/python:3.12.9-slim-bookworm AS python-run-stage
 
 ARG BUILD_ENVIRONMENT
 ENV PYTHONUNBUFFERED=1
